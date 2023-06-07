@@ -1,20 +1,20 @@
 import java.util.*;
 class Palindrome{
-public static void main(String[] args){
+public static void main(String args[]){
 Scanner sc=new Scanner(System.in);
-System.out.print("Input a number:");
-int n=sc.nextInt();
-int sum=0,r;
-int temp=n;
-while(n>0)
+String strobj=sc.nextLine();
+strobj=strobj.toLowerCase();
+String rev="";
+for(int i=strobj.length()-1;i>=0;i--)
+{rev=rev+strobj.charAt(i);}
+//System.out.print(strobj+" "+rev);
+if(strobj.equals(rev))
 {
-r=n%10;
-sum=(sum*10)+r;
-n=n/10;
+System.out.println("YES");
 }
-if(temp==sum)
-System.out.println("It is a Palindrome number:");
 else
-System.out.println("It is not  Palindrome number:");
+{
+System.out.println("NO");
+}
 }
 }
