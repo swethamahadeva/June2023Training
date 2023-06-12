@@ -1,13 +1,23 @@
-import java.util.*;
+import java.util.Scanner;
+import java.util.Arrays;
 class Sum{
 public static void main(String args[]){
-if((3/2*60*60)==(60*60*3/2))
+Scanner sc=new Scanner(System.in);
+int x=sc.nextInt();
+int sum=0,i=0,temp=0,j=0;
+int a[]=new int[x];
+for(i=0;i<x;i++){
+a[i]=sc.nextInt();
+}
+Arrays.sort(a);
+System.out.print(a[0]+""+a[x-1]);
+for(int y:a)
 {
-System.out.println("true");
+sum+=y;
 }
-else
-{
-System.out.println("false");
-}
+float avg=(float)sum/x;
+System.out.println(sum+"\n"+avg);
 }
 }
+
+
