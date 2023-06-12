@@ -1,10 +1,15 @@
-class Main{
-public static void main(String args[]){
-int[] age={12,4,5,2,5};
-System.out.println("Accessing Elements of array:");
-System.out.println("First Element:"+age[0]);
-System.out.println("Second Element:"+age[1]);
-System.out.println("Third Element:"+age[2]);
-System.out.println("Fourth Element:"+age[3]);
-}
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    int a, b, sum;
+
+    System.out.println("Enter two integers: ");
+    a = input.nextInt();
+    b = input.nextInt();
+    sum = a + b;
+
+    System.out.println(a+b);
+  }
 }
