@@ -1,15 +1,16 @@
-import java.util.Scanner;
-
-public class Main {
-  public static void main(String[] args) {
-    Scanner input = new Scanner(System.in);
-    int a, b, sum;
-
-    System.out.println("Enter two integers: ");
-    a = input.nextInt();
-    b = input.nextInt();
-    sum = a + b;
-
-    System.out.println(a+b);
-  }
+class Main extends Thread{
+public static int amount=0;
+public static void main(String args[]){
+Main thread=new Main();
+thread.start();
+while(thread.isAlive()){
+System.out.println("WATING.....");
+}
+System.out.println("Main:"+amount);
+amount++;
+System.out.println("Main:"+amount);
+}
+public void run(){
+amount++;
+}
 }

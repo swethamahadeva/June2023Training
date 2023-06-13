@@ -8,7 +8,7 @@ public class Series_1{
         int num2 = scanner.nextInt();
         System.out.print(num1 + ", ");
         while(num1 > num2) {
-            num1 -= 3;
+            num1-=3;
         System.out.print(num1+ ",");
     }
 System.out.print("0");
